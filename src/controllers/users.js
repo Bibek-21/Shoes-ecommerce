@@ -17,7 +17,7 @@ exports.getUsers = asyncHandler( async (req, res, next) => {
 
 
 //@des      Get single user
-//@route    GET /api/v1/user/:id
+//@route    GET /api/v1/users/:id
 //@access   Public
 exports.getUser = asyncHandler( async (req, res, next) => {
     const user = await User.findById(req.params.id);
