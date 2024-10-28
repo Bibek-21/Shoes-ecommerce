@@ -6,15 +6,15 @@ services:
     environment:
        NODE_ENV: development
        PORT: 5000
-       MONGO_URL: mongodb://mongodb:27017/khutta-ma-jutta
+       MONGO_URL: mongodb+srv://jackethouse002:oPnl2ebXHJL7ibKj@cluster0.ym6ww00.mongodb.net/jkh-pos?retryWrites=true&w=majority&appName=Cluster0
        JWT_SECRET: asdfghjkl123
        JWT_EXPIRE: 1d
        JWT_COOKIE_EXPIRE: 2
        COMPANY: bregmi06@gmail.com
     ports:
       - '5000:5000'
-    depends_on:
-      - mongodb
+    # depends_on:
+    #   - mongodb
 
     networks:
       - shoes-network
